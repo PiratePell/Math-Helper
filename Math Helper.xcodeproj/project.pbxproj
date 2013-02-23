@@ -15,8 +15,7 @@
 		9606043E16D80EB500BD0789 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9606043C16D80EB500BD0789 /* MainMenu.xib */; };
 		9606044616D80EB500BD0789 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9606044516D80EB500BD0789 /* SenTestingKit.framework */; };
 		9606044716D80EB500BD0789 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9606042716D80EB500BD0789 /* Cocoa.framework */; };
-		9606044F16D80EB500BD0789 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9606044D16D80EB500BD0789 /* InfoPlist.strings */; };
-		9606045216D80EB600BD0789 /* Math_HelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606045116D80EB600BD0789 /* Math_HelperTests.m */; };
+		96D74C5616D948DD00DDB39A /* Maths.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D74C5516D948DD00DDB39A /* Maths.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +44,8 @@
 		9606043D16D80EB500BD0789 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9606044416D80EB500BD0789 /* Math HelperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Math HelperTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9606044516D80EB500BD0789 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9606044C16D80EB500BD0789 /* Math HelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Math HelperTests-Info.plist"; sourceTree = "<group>"; };
-		9606044E16D80EB500BD0789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9606045016D80EB500BD0789 /* Math_HelperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Math_HelperTests.h; sourceTree = "<group>"; };
-		9606045116D80EB600BD0789 /* Math_HelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Math_HelperTests.m; sourceTree = "<group>"; };
+		96D74C5416D948DD00DDB39A /* Maths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maths.h; sourceTree = "<group>"; };
+		96D74C5516D948DD00DDB39A /* Maths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maths.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				9606042D16D80EB500BD0789 /* Math Helper */,
-				9606044A16D80EB500BD0789 /* Math HelperTests */,
 				9606042616D80EB500BD0789 /* Frameworks */,
 				9606042516D80EB500BD0789 /* Products */,
 			);
@@ -118,6 +114,8 @@
 				9606043A16D80EB500BD0789 /* AppDelegate.m */,
 				9606043C16D80EB500BD0789 /* MainMenu.xib */,
 				9606042E16D80EB500BD0789 /* Supporting Files */,
+				96D74C5416D948DD00DDB39A /* Maths.h */,
+				96D74C5516D948DD00DDB39A /* Maths.m */,
 			);
 			path = "Math Helper";
 			sourceTree = "<group>";
@@ -130,25 +128,6 @@
 				9606043316D80EB500BD0789 /* main.m */,
 				9606043516D80EB500BD0789 /* Math Helper-Prefix.pch */,
 				9606043616D80EB500BD0789 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9606044A16D80EB500BD0789 /* Math HelperTests */ = {
-			isa = PBXGroup;
-			children = (
-				9606045016D80EB500BD0789 /* Math_HelperTests.h */,
-				9606045116D80EB600BD0789 /* Math_HelperTests.m */,
-				9606044B16D80EB500BD0789 /* Supporting Files */,
-			);
-			path = "Math HelperTests";
-			sourceTree = "<group>";
-		};
-		9606044B16D80EB500BD0789 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9606044C16D80EB500BD0789 /* Math HelperTests-Info.plist */,
-				9606044D16D80EB500BD0789 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,7 +213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9606044F16D80EB500BD0789 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +241,7 @@
 			files = (
 				9606043416D80EB500BD0789 /* main.m in Sources */,
 				9606043B16D80EB500BD0789 /* AppDelegate.m in Sources */,
+				96D74C5616D948DD00DDB39A /* Maths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9606045216D80EB600BD0789 /* Math_HelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +285,6 @@
 				9606043D16D80EB500BD0789 /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		9606044D16D80EB500BD0789 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9606044E16D80EB500BD0789 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -452,6 +422,7 @@
 				9606045716D80EB600BD0789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9606045816D80EB600BD0789 /* Build configuration list for PBXNativeTarget "Math HelperTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +431,7 @@
 				9606045A16D80EB600BD0789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
